@@ -1,0 +1,130 @@
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.flags {
+    margin-left: -50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.third-section {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.flag {
+    text-align: right;
+}
+
+.flag img {
+    max-width: 70%;
+}
+
+.main-section img {
+    max-width: 100%;
+}
+
+.third-section {
+    margin-right: 50px;
+}
+
+.third-section img {
+    max-width: 90%;
+}
+
+.at-the-rate {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.at-the-rate-div {
+    width: 100%;
+    background-color: #FFFF00;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.man {
+    text-align: center;
+}
+
+.key-tick {
+    display: flex;
+}
+.key {
+    width: 80%;
+}
+
+.at-the-rate-div img {
+    max-width: 50px;
+}
+
+.key-div {
+    width: 95%;
+    background-color: #FFFF00;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.sales-code a {
+    text-decoration: none;
+}
+
+.sales-code-div {
+    width: 100%;
+    background-color: #01FFFF;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    border: 1px solid grey;
+    padding: 5px 0px;
+}
+
+.sales-code-div > h1 {
+    margin: 0;
+}
+
+.coins {
+    text-align: center;
+}
+
+@media(max-width: 650px) {
+    .container {
+        width: 100%;
+    }
+    .flags {
+        margin-left: 0;
+    }
+    .at-the-rate-div img {
+        max-width: 50px;
+    }
+    .tick img {
+        max-width: 80%;
+    }
+    .sales-code-div {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 450px) {
+    .at-the-rate-div img {
+        max-width: 30px;
+    }
+    .at-the-rate-div {
+        width: 95%;
+    }
+    .sales-code-div {
+        font-size: 5px;
+    }
+}
