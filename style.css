@@ -171,8 +171,18 @@
     .third-section {
         margin-right: 0;
     }
+    .at-the-rate-div {
+        padding: 5px 0px;
+    }
+    .at-the-rate-div img {
+        width: 30px;
+        vertical-align: middle;
+    }
     .key-div {
         padding: 2px;
+    }
+    .key-div img {
+        max-width: 50%;
     }
     .tick img {
         max-width: 50%;
