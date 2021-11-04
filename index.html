@@ -11,17 +11,20 @@
     <div class="container">
         <div class="main">
             <div class="flags">
-                <div class="flag">
-                    <a href=""><img src="./images/england.jpeg"></a>
+                <div class="eyeball">
+                    <a href=""><img src="./images/eyeballs.gif" alt=""></a>
                 </div>
                 <div class="flag">
-                    <a href=""><img src="./images/france.jpeg"></a>
+                    <a href=""><img class="flag-img tooltip" onmouseout="hideToolTip()" onmouseover="showToolTip(this)" data-language="English" src="./images/england.jpeg"></a>
                 </div>
                 <div class="flag">
-                    <a href=""><img src="./images/italy.jpeg"></a>
+                    <a href=""><img class="flag-img tooltip" onmouseout="hideToolTip()" onmouseover="showToolTip(this)" data-language="Français" src="./images/france.jpeg"></a>
                 </div>
                 <div class="flag">
-                    <a href=""><img src="./images/germany.jpeg"></a>
+                    <a href=""><img class="flag-img tooltip" onmouseout="hideToolTip()" onmouseover="showToolTip(this)" data-language="Magyar" src="./images/italy.jpeg"></a>
+                </div>
+                <div class="flag">
+                    <a href=""><img class="flag-img tooltip" onmouseout="hideToolTip()" onmouseover="showToolTip(this)" data-language="Deutsch" src="./images/germany.jpeg"></a>
                 </div>
             </div>
             <div class="main-section">
@@ -47,6 +50,9 @@
                 </div>
             </div>
             <div class="third-section">
+                <div class="clipboard-gif">
+                    <a href=""><img src="./images/clipboard.webp" alt=""></a>
+                </div>
                 <div class="1">
                     <a href=""><img src="./images/1.PNG" alt=""></a>
                 </div>
@@ -62,5 +68,18 @@
             </div>
         </div>
     </div>
+    <div class="tooltiptext" id="tooltiptext">Tooltip text</div>
+    <script>
+        let toolTipText = document.getElementById("tooltiptext");
+
+        function showToolTip(element) {
+            let language = element.getAttribute('data-language');
+            toolTipText.innerHTML = language;
+            toolTipText.style.display = "block";
+        }
+        function hideToolTip() {
+            toolTipText.style.display = "none";
+        }
+    </script>
 </body>
 </html>
